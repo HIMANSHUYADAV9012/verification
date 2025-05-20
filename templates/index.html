@@ -796,9 +796,9 @@
           fetchBtn.disabled = true;
 
           // Call your FastAPI backend
-          const response = await fetch(
-            `http://localhost:8000/instagram/${username}`
-          );
+const response = await fetch(
+  https://insta-blue-tick-45.onrender.com/instagram/${username}
+);
 
           if (response.status === 429) {
             throw new Error(
