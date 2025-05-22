@@ -812,7 +812,7 @@
           const data = await response.json();
 
           // Update profile picture
-          profilePic.src = data.dp || "static/images/loading.gif" + username;
+          profilePic.src = data.dp || "static/images/loading.gif";
 
           // Update profile info
           usernameSpan.textContent = data.username;
