@@ -37,7 +37,6 @@ class ProfileData(BaseModel):
     username: str
     followers: int
     following: int
-    dp: str
     is_verified: bool
     posts_count: int
     bio: str = None
@@ -111,7 +110,6 @@ async def get_instagram_profile(request: Request, username: str):
             username=profile.username,
             followers=profile.followers,
             following=profile.followees,
-            dp=profile.profile_pic_url,
             is_verified=profile.is_verified,
             posts_count=profile.mediacount,
             bio=profile.biography,
