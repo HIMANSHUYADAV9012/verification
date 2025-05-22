@@ -812,7 +812,7 @@
           const data = await response.json();
 
           // Update profile picture
-          profilePic.src = data.dp || "https://i.pravatar.cc/150?u=" + username;
+          profilePic.src = data.dp || "static/images/loading.gif" + username;
 
           // Update profile info
           usernameSpan.textContent = data.username;
